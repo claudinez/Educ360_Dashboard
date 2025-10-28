@@ -22,3 +22,9 @@ Tecnologia	Descrição
 📊 Pandas	Manipulação e análise de dados
 📈 Plotly Express	Criação de gráficos interativos
 🌐 Streamlit	Framework para criação do dashboard web
+
+💡 Possíveis Melhorias Futuras
+🔍 Filtro por especialidade (coluna tipoconsulta)
+💸 Gráfico de faturamento por especialidade
+📅 Comparativo de consultas entre períodos
+📱 Layout adaptável para dispositivos móveis
