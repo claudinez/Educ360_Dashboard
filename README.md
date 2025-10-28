@@ -1,30 +1,35 @@
 # Educ360_Dashboard
+💡 Sobre o Projeto
 
-🩺 Painel de Consultas Médicas
-📘 Descrição
-Dashboard interativo desenvolvido em Python com Streamlit para visualização e análise de consultas médicas.
-O sistema permite acompanhar o total de consultas, faturamento e unidades ativas, além de gerar gráficos dinâmicos para apoiar decisões gerenciais.
+O dashboard lê um arquivo CSV contendo os registros das consultas e apresenta os dados por meio de gráficos interativos e tabelas filtráveis.
+O desenvolvimento seguiu boas práticas de programação, priorizando código limpo, legibilidade e compatibilidade com versões recentes das bibliotecas.
+Parâmetros antigos que geravam avisos de depreciação foram substituídos por alternativas atualizadas, garantindo estabilidade e longevidade do sistema.
 
-🚀 Funcionalidades
-Exibição do total de consultas, unidades ativas e faturamento total.
-Filtros interativos por data e unidade.
-Gráficos interativos com Plotly:
-📊 Consultas por unidade.
-🩺 Consultas por especialidade.
-💰 Faturamento total por unidade.
-📈 Evolução das consultas ao longo do tempo.
-Interface moderna com tema escuro e cores suaves (verde água, lilás e amarelo).
-Layout totalmente responsivo e em tela cheia.
+O projeto é ideal para clínicas, hospitais e gestores de saúde que desejam acompanhar de forma prática as informações sobre atendimentos, unidades mais movimentadas e especialidades mais procuradas.
+Pode ser facilmente adaptado para diferentes contextos e ampliado com novos recursos, como filtros adicionais, gráficos comparativos ou integração com bancos de dados em tempo real.
+# 🩺 Painel de Consultas Médicas
 
-🧩 Tecnologias Utilizadas
-Tecnologia	Descrição
-🐍 Python	Linguagem principal do projeto
-📊 Pandas	Manipulação e análise de dados
-📈 Plotly Express	Criação de gráficos interativos
-🌐 Streamlit	Framework para criação do dashboard web
+Este projeto apresenta um **dashboard interativo** desenvolvido em **Python** com **Streamlit** e **Plotly Express**, permitindo visualizar informações sobre consultas médicas de forma prática e dinâmica.
 
-💡 Possíveis Melhorias Futuras
-🔍 Filtro por especialidade (coluna tipoconsulta)
-💸 Gráfico de faturamento por especialidade
-📅 Comparativo de consultas entre períodos
-📱 Layout adaptável para dispositivos móveis
+---
+
+## 📊 Funcionalidades
+
+- **Filtro por Data** — visualize consultas de um dia específico ou o total geral.  
+- **Filtro por Unidade** — selecione uma unidade médica específica.  
+- **Gráfico de Barras** — mostra o número de consultas por unidade.  
+- **Gráfico de Pizza (Rosca)** — apresenta a proporção de consultas por especialidade.  
+- **Tabela Detalhada** — exibe os registros filtrados, com datas formatadas e todas as informações.  
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+- [Python 3.x](https://www.python.org/)
+- [Streamlit](https://streamlit.io/)
+- [Plotly Express](https://plotly.com/python/plotly-express/)
+- [Pandas](https://pandas.pydata.org/)
+
+---
+
+
