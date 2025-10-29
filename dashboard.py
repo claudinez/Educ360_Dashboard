@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import os
 
 # Demanda Cliente
 # 1 - Numero de Consultas Geral e por Data (Selectbox) - Grafico de Barras
@@ -10,8 +11,18 @@ import streamlit as st
 st.set_page_config(page_title="Painel de Consultas Médicas", layout="wide")
 
 # CSV
-df = pd.read_csv("Dados/consultas.csv", parse_dates=["dataconsulta"])
-datas_unicas = sorted(df["dataconsulta"].dt.strftime("%d-%m-%Y").unique())
+csv_local = "Dados/consultas.csv"
+csv_remoto = "https://raw.githubusercontent.com/claudinez/Educ360_Dashboard_Clinica/main/consultas.csv"
+
+if os.path.exists(csv_local):
+    df = pd.read_csv("Dados/consultas.csv", parse_dates=["dataconsulta"])
+    datas_unicas = sorted(df["dataconsulta"].dt.strftime("%d-%m-%Y").unique())
+else:
+    df = pd.read_csv("Dados/consultas.csv", parse_dates=["dataconsulta"])
+    datas_unicas = sorted(df["dataconsulta"].dt.strftime("%d-%m-%Y").unique())
+
+#df = pd.read_csv("Dados/consultas.csv", parse_dates=["dataconsulta"])
+#datas_unicas = sorted(df["dataconsulta"].dt.strftime("%d-%m-%Y").unique())
 
 # combo das datas
 opcao_data = st.sidebar.selectbox("Selecione uma data", options=["Todas"] + datas_unicas)
